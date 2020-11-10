@@ -12,7 +12,7 @@ export const NewsContextProvider = (props) => {
     // 'apiKey=096093f0463c4f76902285bd1dc6a797';
 
     useEffect(() => {
-        axios.get('http://newsapi.org/v2/top-headlines?' +
+        axios.get('https://newsapi.org/v2/top-headlines?' +
         'country=' + props.country + '&' +
         'apiKey='+apiKey).then(response => setData(response.data))
         .catch(error => console.log(error))
